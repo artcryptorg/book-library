@@ -1,0 +1,28 @@
+{
+  "name": "book-library",
+  "version": "1.0.0",
+  "description": "book library",
+  "main": "app.js",
+  "scripts": {
+    "start": "live-server",
+    "build": "rollup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artcryptorg/book-library.git"
+  },
+  "keywords": [
+    "book"
+  ],
+  "author": "alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artcryptorg/book-library/issues"
+  },
+  "homepage": "https://github.com/artcryptorg/book-library#readme",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "live-server": "^1.2.2",
+    "rollup": "^4.12.0"
+  }
+}
