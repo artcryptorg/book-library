@@ -1,7 +1,7 @@
 {
-  "name": "book-library",
+  "name": "book-app",
   "version": "1.0.0",
-  "description": "book library",
+  "description": "Cool book app",
   "main": "app.js",
   "type": "module",
   "scripts": {
@@ -10,25 +10,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/artcryptorg/book-library.git"
+    "url": "git+https://github.com/AlariCode/8-javascript-advanced-1.git"
   },
   "keywords": [
-    "book"
+    "books"
   ],
-  "author": "alex",
+  "author": "Anton Larichev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/artcryptorg/book-library/issues"
+    "url": "https://github.com/AlariCode/8-javascript-advanced-1/issues"
   },
-  "homepage": "https://github.com/artcryptorg/book-library#readme",
+  "homepage": "https://purpleschool.ru",
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "eslint": "^8.56.0",
-    "live-server": "^1.2.2",
-    "rollup": "^4.12.0",
-    "rollup-plugin-import-css": "^3.4.0"
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "eslint": "^8.33.0",
+    "rollup": "^3.14.0",
+    "rollup-plugin-import-css": "^3.1.0"
   },
   "dependencies": {
-    "on-change": "^5.0.1"
+    "on-change": "^4.0.2"
   }
 }
