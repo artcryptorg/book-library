@@ -1,38 +1,37 @@
 import { AbstractView } from '../../common/view.js';
-import onChange from 'on-change'
-import { Header } from '../../components/header/header.js'
+import onChange from 'on-change';
+import { Header } from '../../components/header/header.js';
 
 export class MainView extends AbstractView {
-    state = {
-        list: [],
-        loading: false,
-        searchQuery: undefined,
-        offset: 0
-    };
+	state = {
+		list: [],
+		loading: false,
+		searchQuery: undefined,
+		offset: 0
+	};
 
-    constructor(appState) {
-        super();
-        this.appState = appState;
-        this.appState = onChange(this.appState, this.appStateHook.bind(this)); // подписались на обновление глобального стейта
-        this.setTitle('Поиск книг');
-    }
+	constructor(appState) {
+		super();
+		this.appState = appState;
+		this.appState = onChange(this.appState, this.appStateHook.bind(this))
+		this.setTitle('Поиск книг');
+	}
 
-    appStateHook(path) { //то есть если favorites обновился гдето то перендериваем
-        if (path === 'favorites') {
-            console.log(path);
-        }
-    }
+	appStateHook(path) {
+		if (path === 'favorites') {
+			console.log(path);
+		}
+	}
 
-    render() {
-        const main = document.createElement('div');
-        this.app.innerHTML = '';
-        this.app.append(main);
-        this.renderHeader();
-        this.appState.favorites.push('d');
-    }
+	render() {
+		const main = document.createElement('div');
+		this.app.innerHTML = '';
+		this.app.append(main);
+		this.renderHeader();
+	}
 
-    renderHeader() {
-        const header = new Header(this.appState).render();
-        this.app.prepend(header);
-    }
+	renderHeader() {
+		const header = new Header(this.appState).render();
+		this.app.prepend(header);
+	}
 }
