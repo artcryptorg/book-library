@@ -10,17 +10,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlariCode/8-javascript-advanced-1.git"
+    "url": ""
   },
   "keywords": [
     "books"
   ],
-  "author": "Anton Larichev",
+  "author": "Alex",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AlariCode/8-javascript-advanced-1/issues"
+    "url": ""
   },
-  "homepage": "https://purpleschool.ru",
+  "homepage": "",
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.0.1",
     "eslint": "^8.33.0",
